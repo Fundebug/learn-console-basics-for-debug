@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Learn Basics of Console</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <h1 style="margin: 10px;font-size: 2rem;">学习Console的基本技巧</h1>
+        <ul
+            class="list-group"
+            style="width: 600px;margin: 20px 20px 20px 20px;"
+        >
+            <li class="list-group-item">
+                1. 将变量以对象的形式打印出来: console.log({variable})
+            </li>
+            <li class="list-group-item">
+                2. 将数组以表格的形式打印出来: console.table(variable)
+            </li>
+            <li class="list-group-item">3. 自定义console函数</li>
+            <li class="list-group-item">
+                4. 利用console.assert()在某些条件下输出信息
+            </li>
+        </ul>
+        <script>
+            console.line = function(msg) {
+                console.log(
+                    "%c %s %s %s",
+                    "color: black;",
+                    "\n-----------------------------------------",
+                    msg,
+                    "-----------------------------------------"
+                );
+            };
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>
